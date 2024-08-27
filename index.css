@@ -1,0 +1,55 @@
+/* Reset basic elements */
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set full height and width, with a background image */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* Dark overlay for better text visibility */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(238, 237, 237, 0.815);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center the text and style it */
+.container {
+    text-align: center;
+}
+
+/* Animated text styling */
+h1 {
+    color: #FFD700;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: colorChange 3s infinite;
+}
+
+/* Color change animation */
+@keyframes colorChange {
+    0%, 100% {
+        color: #ffe75f; /* Yellow */
+    }
+    50% {
+        color: #ffa600; /* Dark Orange */
+    }
+}
