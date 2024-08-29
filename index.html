@@ -1,17 +1,471 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tyggebein.no</title>
-    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tyggebein.no - snacks til din hund</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/metropolis-4" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!-- styles -->
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
-    <div class="overlay">
-        <div class="container">
-            <h1>tyggebein.no</h1>
-            <h1>Snart live!</h1>
+    <!-- Header Section -->
+    <!-- Header Section -->
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <div class="navbar-container">
+            <nav class="navbar myContainer">
+                <!-- Navbar Header  -->
+                <div class="navbar-header">
+                    <!-- Logo  -->
+                    <div class="logo">
+                        <a href="./index.html" class="brand">
+                            <img src="./images/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <!-- Navbar Toggler  -->
+                    <div class="humbugger" id="humbugger">
+                        <span class="humbugger-line"></span>
+                        <span class="humbugger-line"></span>
+                        <span class="humbugger-line"></span>
+                    </div>
+                </div>
+                <!-- Navbar Links  -->
+                <div class="navbar-links">
+                    <div class="menu" id="menu">
+                        <!-- Close CloseMenu Navbar  -->
+                        <span class="closeMenu"><i class="fa-solid fa-xmark"></i></span>
+                        <ul class="menu-inner">
+                            <!-- Menu Item  -->
+                            <li class="menu-item"><a href="./index.html" class="menu-link active">Hjem</a></li>
+
+                            <!-- Menu Item -->
+                            <li class="menu-item menu-dropdown">
+                                <div class="menu-link submenuLinks"><span>Produkter</span> <i
+                                        class="fa-solid fa-chevron-right"></i>
+                                </div>
+
+                                <!-- Sub Menu -->
+                                <div class="submenu">
+                                    <ul class="submenu-list">
+                                        <li class="submenu-item"><a href="#" class="submenu-link">Tyggebein</a>
+                                        </li>
+                                        <li class="submenu-item"><a href="#" class="submenu-link">Kollagen - tilsetning</a>
+                                        </li>
+                                        <li class="submenu-item"><a href="#" class="submenu-link">Protein snacks</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+
+                            <!-- Menu Item -->
+                            <li class="menu-item"><a href="#" class="menu-link">Om oss</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Kontakt</a></li>
+
+                            <!-- Menu Item -->
+                            <li class="menu-item menu-dropdown">
+                                <div class="menu-link submenuLinks"><span
+                                        style="display: flex; align-items: center; gap: 2px;"><img
+                                            style="width: 15px; height: 10px;" src="./images/no.png" alt="en">NO</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+
+                                <!-- Sub Menu -->
+                                <div class="submenu">
+                                    <ul class="submenu-list">
+                                        <li class="submenu-item"><a
+                                                style="display: flex; align-items: center; justify-content: center; gap: 2px;"
+                                                href="#" class="submenu-link"><img style="width: 15px; height: 10px;"
+                                                    src="./images/no.png" alt="en"> NO</a>
+                                        </li>
+                                        <li class="submenu-item"><a
+                                                style="display: flex; align-items: center; justify-content: center; gap: 2px;"
+                                                href="#" class="submenu-link"><img style="width: 15px; height: 10px;"
+                                                    src="./images/en.png" alt="en"> EN</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Banner Hero Section -->
+    <!-- Banner Hero Section -->
+    <!-- Banner Hero Section -->
+    <div class="banner-hero">
+        <div class="myContainer">
+            <div class="hero-container">
+                <!-- Hero Details -->
+                <div class="hero-details">
+                    <div class="banner-context" data-aos="fade-right" data-aos-duration="1000">
+                        <h1 class="title" data-aos-duration="1000">PREMIUM KVALITET</h1>
+                        <span class="sub-title" data-aos-duration="1000">Naturlige Hundesnacks</span>
+                        <div class="info" data-aos="fade-right" data-aos-duration="1500">
+                            <p>Våre hundetygg er sunne, naturlige og fri for konserveringsmidler.</p>
+                        </div>
+                        <div class="button-container" data-aos="fade-up" data-aos-duration="1500">
+                            <a href="#/"><span>Se bestselgere</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hero Photo -->
+                <div class="hero-photo">
+                    <div class="image-container ">
+                        <img data-aos="fade-down" data-aos-duration="1000" class="main-image ds-show"
+                            src="./images/hero-image.png" alt="Produkt">
+                        <img class="main-image md-show" src="./images/hero-image-3.png" alt="Photo">
+                        <div class="animated-images">
+                            <img data-aos="fade-up" data-aos-duration="1500" class="image-1"
+                                src="./images/hero-image-1.png" alt="Photo">
+                            <img data-aos="fade-up" data-aos-duration="1500" class="image-2"
+                                src="./images/hero-image-2.png" alt="Photo">
+                            <div class="img-group" data-aos="fade-left" data-aos-duration="1700">
+                                <img class="group-image-1" src="./images/hero-image-group-1.png" alt="Photo">
+                                <img class="group-image-2" src="./images/hero-image-group-2.png" alt="Photo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- Product Section One-->
+    <!-- Product Section One-->
+    <!-- Product Section One-->
+    <div class="product-section">
+        <div class="myContainer">
+            <h1 data-aos="fade-down" data-aos-duration="1000" class="title-container">Produkter</h1>
+            <div class="product-container">
+                <!-- Product Details -->
+                <div class="product-details">
+                    <div class="product-context stop-horizontal-scroll">
+                        <h3 data-aos="fade-right" data-aos-duration="1000" class="product-name">
+                            Himalayan tyggebein</h3>
+                        <div data-aos="fade-right" data-aos-duration="1500" class="info" data-text="Dog Chew">
+                            <p>Himalaya tyggeben er 100 % naturlig og gir hunden en god tyggeopplevelse. Benet varer lenge, gir en god metthetsfølelse og er ideelt for hundens tannhygiene. Det er laget av 99,9 % kumelk, med lavt laktoseinnhold. Benet inneholder 66 % protein og har en utmerket smak.</p>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="1500" class="button-container">
+                            <a href="#/"><span>Legg i handlevogn</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Photo -->
+                <div class="product-photo">
+                    <div class="image-container">
+                        <img data-aos="fade-up" data-aos-duration="1000" class="ds-show"
+                            src="./images/products-list-image-1.png" alt="Product">
+                        <img class="md-show" src="./images/Dog-chew-2-1.png" alt="Photo">
+                        <div class="animated-images" data-aos="fade-up" data-aos-duration="1500">
+                            <img class="image-1" src="./images/products-list-image-1-animated-1.png" alt="Photo">
+                            <img class="image-2" src="./images/products-list-image-1-animated-2.png" alt="Photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Section Two-->
+    <!-- Product Section Two-->
+    <!-- Product Section Two-->
+    <div class="product-section product-section-2">
+        <div class="myContainer">
+            <div class="product-container product-container-2">
+                <!-- Product Photo -->
+                <div class="product-photo">
+                    <div class="image-container">
+                        <img data-aos="fade-up" data-aos-duration="1000" class="ds-show"
+                            src="./images/products-list-image-2.png" alt="Product">
+                        <img class="md-show" src="./images/Chew-seasoning-2-1.png" alt="Photo">
+                        <div class="animated-images" data-aos="fade-up" data-aos-duration="1500">
+                            <img class="image-1" src="./images/products-list-image-2-animated-1.png" alt="Photo">
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Details -->
+                <div class="product-details">
+                    <div class="product-context stop-horizontal-scroll">
+                        <h3 data-aos="fade-left" data-aos-duration="1000" class="product-name">
+                            Kollagen-krydder</h3>
+                        <div data-aos="fade-left" data-aos-duration="1500" class="info" data-text="Chew Seasoning">
+                            <p>Vår hundetyggkrydder er laget av tørket ostemasse og fungerer som et sunt tilskudd for alle hunder som trenger ekstra protein eller ønsker å forbedre smak og lukt på maten. Det er spesielt anbefalt for diegivende hundemødre og små valper. Gir et ekstra kollagen-boost.</p>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="1500" class="button-container">
+                            <a href="#/"><span>Legg i handlevogn</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Product Section Three-->
+    <!-- Product Section Three-->
+    <!-- Product Section Three-->
+    <div class="product-section">
+        <div class="myContainer">
+            <div class="product-container product-container-3">
+                <!-- Product Details -->
+                <div class="product-details">
+                    <div class="product-context stop-horizontal-scroll">
+                        <h3 data-aos="fade-right" data-aos-duration="1000" class="product-name">
+                            Sprø puffer</h3>
+                        <div data-aos="fade-right" data-aos-duration="1500" class="info" data-text="Crunchy Puffs">
+                            <p>Sprø puffer: Naturlige, håndlagde hundetyggpuffer som er mykere enn vanlige tyggebein, og derfor spesielt anbefalt for valper og eldre hunder. Perfekte som en belønning under trening eller som en deilig godbit.</p>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="1500" class="button-container">
+                            <a href="#/"><span>Legg i handlevogn</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Photo -->
+                <div class="product-photo">
+                    <div class="image-container">
+                        <img data-aos="fade-up" data-aos-duration="1000" class="ds-show"
+                            src="./images/products-list-image-3.png" alt="Product">
+                        <img class="md-show" src="./images/Cruchy-puffs-2.png" alt="Photo">
+                        <div class="animated-images">
+                            <img data-aos="fade-up" data-aos-duration="1500" class="image-1"
+                                src="./images/products-list-image-3-animated-1.png" alt="Photo">
+                            <img data-aos="fade-up" data-aos-duration="1500" class="image-2"
+                                src="./images/products-list-image-3-animated-2.png" alt="Photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- About Section -->
+    <!-- About Section -->
+    <!-- About Section -->
+    <div class="about-section">
+        <div class="video-container">
+            <div class="video-holder">
+                <video class="video desktop sm-show" autoplay="autoplay" loop="true" muted="">
+                    <source src="https://hidogchews.com/wp-content/uploads/2022/04/pc_chew_seasoning_HD.mp4"
+                        type="video/mp4">
+                </video>
+
+                <video class="video sm-none" autoplay="autoplay" loop="true" playsinline="" muted="">
+                    <source src="https://hidogchews.com/wp-content/uploads/2022/04/pc_chew_seasoning_HD.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <!-- About Details -->
+        <div class="about-details myContainer">
+            <div class="about-context" data-aos="fade-left" data-aos-duration="1000">
+                <div class="context-container">
+                    <h2 class="about-title">Om oss</h2>
+                    <p class="about-info">
+                        Hos oss i Tyggebein.no er vi stolte av vår eksepsjonelle kvalitet. Fra den første ideen til det ferdige produktet er vår oppmerksomhet på detaljer uten sidestykke. I en stadig utviklende bransje har vi satt standarden for innovasjon og levering. Utforsk nettsiden vår og se selv – vi elsker det vi gjør, og vi er sikre på at du vil gjøre det samme.
+                    </p>
+                    <a href="#/" class="view-more">Les mer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Latest News Section -->
+    <!-- Latest News Section -->
+    <!-- Latest News Section -->
+    <div class="latest-news">
+        <div class="myContainer">
+            <div data-aos="fade-up" data-aos-duration="1000" class="news-container">
+                <h2 class="title">Siste nyheter</h2>
+                <a class="view-more" href="#/">Les mer</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contact Us Section -->
+    <!-- Contact Us Section -->
+    <!-- Contact Us Section -->
+    <div class="contact-us">
+        <div class="contact-container">
+            <div class="contact-item image-container">
+                <div class="title-container">
+                    <div class="text">
+                        <h2 data-aos="fade-up" data-aos-duration="1000" class="item-title">Har du noe
+                            <span>Spørsmål?</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-item">
+                <!-- Contact Form Section -->
+                <div class="contact-form">
+                    <div class="form-container">
+                        <h2 data-aos="fade-up" data-aos-duration="1000" class="title">Ta kontakt</h2>
+                        <!-- Form -->
+                        <div class="contactForm-container">
+                            <div class="isntSubmit req-message" id="formErrorMessage">
+                                <i class="fa-solid fa-exclamation"></i>
+                                <span>Form submission failed. Review the following information: Name, Your email address
+                                    , and
+                                    Message.</span>
+                            </div>
+                            <form id="startForm">
+                                <!-- Input Fill -->
+                                <div class="input-fill">
+                                    <label class="label-text">Navn <span>*</span></label>
+                                    <input type="text" id="fullName">
+                                    <p class="req-message" id="fullNameError"><i class="fa-solid fa-exclamation"></i>
+                                        <span>Name is required.</span>
+                                    </p>
+                                </div>
+                                <!-- Input Fill -->
+                                <div class="input-fill">
+                                    <label class="label-text">Din e-post<span>*</span></label>
+                                    <input type="email" id="email">
+                                    <p class="req-message" id="emailError"><i class="fa-solid fa-exclamation"></i>
+                                        <span>Email is required.</span>
+                                    </p>
+                                </div>
+                                <!-- Input Fill -->
+                                <div class="input-fill">
+                                    <label class="label-text">Melding <span>*</span></label>
+                                    <textarea id="message"></textarea>
+                                    <p class="req-message" id="messageError"><i class="fa-solid fa-exclamation"></i>
+                                        <span>Message is required.</span>
+                                    </p>
+                                </div>
+                                <div class="button-container">
+                                    <button type="button" id="submitButton" onclick="submitForm()"><span>Send
+                                            message</span>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="contactSubmit-message" id="contactSubmitMessage">
+                                <p>Thank You!</p>
+                                <div class="button-container">
+                                    <button onclick="resetStartForm()">Ok</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Form End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Logos Section -->
+    <!-- Logos Section -->
+    <!-- Logos Section -->
+    <div class="logos-section">
+        <div class="myContainer">
+            <div class="logos-container">
+                <img data-aos="fade-up" data-aos-duration="1000" src="./images/magnetic-latvia-incubators.png"
+                    alt="Logo">
+                <img data-aos="fade-up" data-aos-duration="1000" src="./images/national-development-plan.png"
+                    alt="Logo">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="myContainer">
+            <div class="footer-links">
+                <div class="footer-logo">
+                    <img src="./images/logo.png" alt="Logo">
+                    <div class="social-media">
+                        <a href="#/"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <ul class="links-container">
+                    <h4 class="title">Hurtig lenker</h4>
+                    <li><a href="#">Hjem</a></li>
+                    <li><a href="#">Tyggebein</a></li>
+                    <li><a href="#">Kollagen krydder</a></li>
+                    <li><a href="#">Sprø puffer</a></li>
+                    <li><a href="#">Om oss</a></li>
+                </ul>
+                <ul class="links-container location">
+                    <h4 class="title">Kontakt</h4>
+                    <li><a href="#"><i class="fa-solid fa-location-dot"></i>
+                            Frogneralleen 15, Frogner 2016
+                        </a></li>
+                    <li><a href="mailto:himalayan.latvia@hidogchews.com"><i
+                                class="fa-solid fa-envelope"></i>post@tyggebein.no</a></li>
+                    <li><a href="tel:+47 96 820 0 12"><i class="fa-solid fa-phone"></i>+47 96 82 00 12</a></li>
+                    <li><a href="tel:+47 96 820 0 12"><i class="fa-solid fa-phone"></i>+47 96 82 78 42</a></li>
+                </ul>
+                <ul class="links-container subscribe">
+                    <h4 class="title">Meld deg på vårt nyhetsbrev</h4>
+                    <div class="subscribe-form">
+                        <input type="email" placeholder="Enter your email here">
+                        <div class="button-container"><button><span>Subscribe</span></button></div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <!-- Company Details -->
+        <div class="company-details">
+            <div class="myContainer">
+                <div class="details-container">
+                    <img src="./images/Liaa_en_done.jpg" alt="Photo">
+                    <p>Hos oss i Tyggebein.no er vi stolte av vår eksepsjonelle kvalitet. Fra den første ideen til det ferdige produktet er vår oppmerksomhet på detaljer uten sidestykke. I en stadig utviklende bransje har vi satt standarden for innovasjon og levering. Utforsk nettsiden vår og se selv – vi elsker det vi gjør, og vi er sikre på at du vil gjøre det samme.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="myContainer">
+                <div class="bottom-container">
+                    <div class="links">
+                        <a href="#/">Privacy policy</a>
+                        <a href="#/">Cookies</a>
+                    </div>
+                    <div class="copyright-text">
+                        <p>
+                            <span id="date"></span>PETSHOP AS - All rights reserved.| Developed by Nexus Solutions AS<a
+                                href="#/">2024</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- javascript -->
+    <!-- Animated  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
 </body>
+
 </html>
